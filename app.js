@@ -12,14 +12,32 @@ const connection = mysql.createConnection({
 });
 
 app.get('/api/data', (req, res) => {
-    connection.query('SELECT currencies.name, currencies.symbol, transactions.amount FROM transactions INNER JOIN currencies ON transactions.currency_id = currencies.id', function (error, results, fields) {
-        if (error) {
+    const transactionQuery = new Promise((resolve, reject) => {
+        connection.query('SELECT currencies.name, currencies.symbol, transactions.amount FROM transactions INNER JOIN currencies ON transactions.currency_id = currencies.id', function (error, results) {
+            if (error) {
+                return reject(error);
+            }
+            return resolve(results);
+        });
+    });
+
+    const goldQuery = new Promise((resolve, reject) => {
+        connection.query('SELECT * FROM gold', function (error, results) {
+            if (error) {
+                return reject(error);
+            }
+            return resolve(results);
+        });
+    });
+
+    Promise.all([transactionQuery, goldQuery])
+        .then(([transactionResults, goldResults]) => {
+            res.json({transactions: transactionResults, gold: goldResults});
+        })
+        .catch((error) => {
             console.error(error);
             res.status(500).json({status: 'error'});
-        } else {
-            res.json(results);
-        }
-    });
+        });
 });
 
 app.listen(port, () => {
