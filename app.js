@@ -12,7 +12,7 @@ const connection = mysql.createConnection({
 });
 
 app.get('/api/data', (req, res) => {
-    connection.query('SELECT currencies.name, transactions.amount FROM transactions INNER JOIN currencies ON transactions.currency_id = currencies.id', function (error, results, fields) {
+    connection.query('SELECT currencies.name, currencies.symbol, transactions.amount FROM transactions INNER JOIN currencies ON transactions.currency_id = currencies.id', function (error, results, fields) {
         if (error) {
             console.error(error);
             res.status(500).json({status: 'error'});

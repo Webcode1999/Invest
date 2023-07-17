@@ -10,39 +10,48 @@ let ctx1 = document.getElementById('myChart').getContext('2d');
 let ctx2 = document.getElementById('goldPriceChart').getContext('2d');
 
 // Pie Chart
-let myChart = new Chart(ctx1, {
-    type: 'pie',
-    data: {
-        labels: ['GBP', 'USD', 'CHF','EUR','MAD'],
-        datasets: [{
-            data: [1000, 1000, 1000,1200,1000],
-            backgroundColor: [
-                '#4650dd',
-                '#3787ff',
-                ' #ff4958',
-                ' #8890ff',
-                '#ff6b78'
-            ]
-        }]
-    },
-    options: {
-        responsive: false,
-        plugins: {
-            datalabels: {
-                formatter: (value, ctx) => {
-                    let sum = 0;
-                    let dataArr = ctx.chart.data.datasets[0].data;
-                    dataArr.map(data => {
-                        sum += data;
-                    });
-                    let percentage = (value*100 / sum).toFixed(2)+"%";
-                    return percentage;
-                },
-                color: '#fff',
+fetch('http://localhost:3000/api/data')
+.then(responce => responce.json())
+.then(data => {
+    let labels = data.map(item => `${item.symbol}`); // 通貨名と国名をラベルとして使用
+let amounts = data.map(item => item.amount);
+
+
+    let myChart = new Chart(ctx1, {
+        type: 'pie',
+        data: {
+            labels: labels,
+            datasets: [{
+                data: amounts,
+                backgroundColor: [
+                    '#4650dd',
+                    '#3787ff',
+                    ' #ff4958',
+                    ' #8890ff',
+                    '#ff6b78'
+                ]
+            }]
+        },
+        options: {
+            responsive: false,
+            plugins: {
+                datalabels: {
+                    formatter: (value, ctx) => {
+                        let sum = 0;
+                        let dataArr = ctx.chart.data.datasets[0].data;
+                        dataArr.map(data => {
+                            sum += data;
+                        });
+                        let percentage = (value*100 / sum).toFixed(2)+"%";
+                        return percentage;
+                    },
+                    color: '#fff',
+                }
             }
         }
-    }
-});
+    });
+})
+.catch(error => CSSFontPaletteValuesRule.error('エラーが出ました',error));
 
 // Line Chart
 let goldPriceChart = new Chart(ctx2, {
