@@ -15,7 +15,7 @@ fetch('http://localhost:3000/api/data')
     .then(data => {
         let labels = data.transactionQuery.map(item => `${item.currency_name}`); // 通貨名をラベルとして使用
         let amounts = data.transactionQuery.map(item => item.total_transaction);
-        console.log(amounts);
+        // console.log(amounts);
 
         let myChart = new Chart(ctx1, {
             type: 'pie',
