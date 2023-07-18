@@ -13,8 +13,9 @@ let ctx2 = document.getElementById('goldPriceChart').getContext('2d');
 fetch('http://localhost:3000/api/data')
     .then(responce => responce.json())
     .then(data => {
-        let labels = data.transactions.map(item => `${item.symbol}`); // 通貨名と国名をラベルとして使用
-        let amounts = data.transactions.map(item => item.amount);
+        let labels = data.transactionQuery.map(item => `${item.currency_name}`); // 通貨名をラベルとして使用
+        let amounts = data.transactionQuery.map(item => item.total_transaction);
+        console.log(amounts);
 
         let myChart = new Chart(ctx1, {
             type: 'pie',
