@@ -12,9 +12,9 @@ fetch('http://localhost:3000/api/data')
         // Function to update the amount for a country
         function updateCountryAmount(countryId, symbol) {
             let element = document.getElementById(countryId);
-            let transactionQuery = findTransactionBySymbol(symbol);
-            if (transactionQuery) {
-                element.textContent = data.transactionQuery.map(item => item.total_transaction);
+            let transaction = findTransactionBySymbol(symbol);
+            if (transaction) {
+                element.textContent =  data.transactionQuery.map(item => item.total_transaction);
             }
         }
 
