@@ -1,12 +1,11 @@
 fetch('http://localhost:3000/api/data')
     .then(response => response.json())
     .then(data => {
-        let transactions = data.transactionQuery.map(item => item.total_transaction);
-        console.log(transactions);
+        let transactions = data.transactions;
 
         // Function to find a transaction by currency symbol
         function findTransactionBySymbol(symbol) {
-            return transactions.find(transactionQuery => transactionQuery.map(item => item.total_transaction) === symbol);
+            return transactions.find(transaction => transaction.symbol === symbol);
         }
 
         // Function to update the amount for a country
@@ -14,7 +13,7 @@ fetch('http://localhost:3000/api/data')
             let element = document.getElementById(countryId);
             let transaction = findTransactionBySymbol(symbol);
             if (transaction) {
-                element.textContent =  data.transactionQuery.map(item => item.total_transaction);
+                element.textContent = transaction.amount;
             }
         }
 
