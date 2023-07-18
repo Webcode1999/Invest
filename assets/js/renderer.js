@@ -13,7 +13,7 @@ let ctx2 = document.getElementById('goldPriceChart').getContext('2d');
 fetch('http://localhost:3000/api/data')
     .then(response => response.json())
     .then(data => {
-        let labels = data.transactionQuery.map(item => `${item.currency_name}`); // 通貨名をラベルとして使用
+        let labels = data.transactionQuery.map(item => `${item.currency_symbol}`); // 通貨名をラベルとして使用
         let amounts = data.transactionQuery.map(item => item.total_transaction);
 
         let myChart = new Chart(ctx1, {

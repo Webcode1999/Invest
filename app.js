@@ -34,7 +34,7 @@ app.get('/api/data', (req, res) => {
     });
 
     const transactionQuery = new Promise((resolve, reject) => {
-        connection.query('SELECT c.name AS currency_name, SUM(t.amount) AS total_transaction FROM transactions t JOIN currencies c ON t.currency_id = c.id GROUP BY c.name', function (error, results) {
+        connection.query('SELECT c.name AS currency_name, c.symbol AS currency_symbol, SUM(t.amount) AS total_transaction FROM transactions t JOIN currencies c ON t.currency_id = c.id GROUP BY c.name, c.symbol', function (error, results) {
             if (error) {
                 return reject(error);
             }
