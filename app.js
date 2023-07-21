@@ -3,6 +3,8 @@ const express = require('express');
 const mysql = require('mysql');
 const app = express();
 const port = 3000;
+app.use(express.json());
+
 
 const connection = mysql.createConnection({
     host: process.env.DB_HOST,
@@ -65,7 +67,20 @@ app.get('/api/data', (req, res) => {
             res.status(500).json({status: 'error'});
         });
 });
+app.post('/transactions', (req, res) => {
+    const { currencyId, amount } = req.body;
 
+    const query = `INSERT INTO transactions (currency_id, amount) VALUES (?, ?)`;
+
+    connection.query(query, [currencyId, amount], (error, results) => {
+        if (error) {
+            console.error(error);
+            res.status(500).json({status: 'error'});
+        } else {
+            res.json({status: 'success', currencyId, amount});
+        }
+    });
+});
 
 app.listen(port, () => {
     console.log(`App running on port ${port}`);
