@@ -23,8 +23,9 @@
         <ul class="Sidebar_box_Content">
           <li class="Sidebar_box_Content_text">Dashbord</li>
           <li class="Sidebar_box_Content_text">Stocks</li>
-          <li class="Sidebar_box_Content_text"><a href="#" onclick="window.loadLocalFile('fx.html');">Foreign
-              exchange</a></li>
+          <a href="#" onclick="window.loadLocalFile('fx.html');">
+          <li class="Sidebar_box_Content_text">Foreign
+            exchange</li></a>
           <li class="Sidebar_box_Content_text">Goldreserve</li>
         </ul>
       </nav>
@@ -173,7 +174,48 @@
       <div class="Pie_Chart">
         <canvas class="myChart" id="myChart"></canvas>
       </div>
+
       <h2 class="Dashbord_text">Gold holdings</h2>
+  <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "description": "GOLD",
+      "proName": "TVC:GOLD"
+    },
+    {
+      "description": "GOLD",
+      "proName": "OANDA:XAUUSD"
+    },
+    {
+      "description": "GOLD/CHF",
+      "proName": "OANDA:XAUCHF"
+    },
+    {
+      "description": "GOLD/EUR",
+      "proName": "OANDA:XAUEUR"
+    },
+    {
+      "description": "XAU/JPY",
+      "proName": "OANDA:XAUJPY"
+    },
+    {
+      "description": "\tXAU/GBP",
+      "proName": "OANDA:XAUGBP"
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "light",
+  "isTransparent": true,
+  "displayMode": "adaptive",
+  "locale": "ja"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
       <div class="Line_Chart">
         <canvas id="goldPriceChart"></canvas>
       </div>

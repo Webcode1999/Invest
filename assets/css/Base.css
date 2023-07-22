@@ -12,6 +12,9 @@ svg{
     height: 50px;
     border-radius: 100%;
 }
+li{
+    cursor: pointer;
+}
 .Fxconteiner::-webkit-scrollbar {
     width: 5px;
     height: 10px;
