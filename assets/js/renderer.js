@@ -32,7 +32,13 @@ fetch('http://localhost:3000/api/data')
                         '#e1ff37',
                         ' #49d5ff',
                         ' #dd88ff',
-                        '#ff6bf3'
+
+                        '#a8ffb6',
+                        '#bbc0ff',
+                        '#e1ff37',
+                        ' #00c3ff',
+                        ' #dd88ff60',
+                        '#ff6bf38f'
                     ]
                 }]
             },
