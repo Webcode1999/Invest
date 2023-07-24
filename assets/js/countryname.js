@@ -1,30 +1,32 @@
 fetch('http://localhost:3000/api/data')
     .then(response => response.json())
     .then(data => {
-        let transactions = data.transactions;
+        let transactions =  data.transactionQuery.map(item => ({
+            symbol: item.currency_symbol,
+            total_transaction: item.total_transaction
+        }));
+        console.log(transactions);
 
-        // Function to find a transaction by currency symbol
         function findTransactionBySymbol(symbol) {
             return transactions.find(transaction => transaction.symbol === symbol);
         }
 
-        // Function to update the amount for a country
         function updateCountryAmount(countryId, symbol) {
             let element = document.getElementById(countryId);
             let transaction = findTransactionBySymbol(symbol);
             if (transaction) {
-                element.textContent = transaction.amount;
+                element.textContent = transaction.total_transaction;
             }
         }
 
-        // Update amounts for each country
         updateCountryAmount('Country_id_1', 'USD');
-        updateCountryAmount('Country_id_7', 'CHF');
         updateCountryAmount('Country_id_2', 'EUR');
         updateCountryAmount('Country_id_4', 'MAD');
+        updateCountryAmount('Country_id_7', 'CHF');
         updateCountryAmount('Country_id_8', 'GBP');
     })
     .catch(error => console.error('エラーが出ました', error));
+
 
 
 

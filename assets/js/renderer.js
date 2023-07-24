@@ -11,11 +11,10 @@ let ctx2 = document.getElementById('goldPriceChart').getContext('2d');
 
 // Pie Chart
 fetch('http://localhost:3000/api/data')
-    .then(responce => responce.json())
+    .then(response => response.json())
     .then(data => {
-        let labels = data.transactionQuery.map(item => `${item.currency_name}`); // 通貨名をラベルとして使用
+        let labels = data.transactionQuery.map(item => `${item.currency_symbol}`); // 通貨名をラベルとして使用
         let amounts = data.transactionQuery.map(item => item.total_transaction);
-        console.log(amounts);
 
         let myChart = new Chart(ctx1, {
             type: 'pie',
@@ -33,7 +32,13 @@ fetch('http://localhost:3000/api/data')
                         '#e1ff37',
                         ' #49d5ff',
                         ' #dd88ff',
-                        '#ff6bf3'
+
+                        '#a8ffb6',
+                        '#bbc0ff',
+                        '#e1ff37',
+                        ' #00c3ff',
+                        ' #dd88ff60',
+                        '#ff6bf38f'
                     ]
                 }]
             },
@@ -79,9 +84,5 @@ fetch('http://localhost:3000/api/data')
                 }
             }
         });
-
-
     })
     .catch(error => console.error('エラーが出ました', error));
-
-
