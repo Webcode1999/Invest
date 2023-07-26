@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/Header.css" />
+    <link rel="stylesheet" href="./assets/css/Base.css" />
+    <link rel="stylesheet" href="./assets/css/Sidebar.css" />
+    <link rel="stylesheet" href="./assets/css/Main.css" />
+    <link rel="stylesheet" href="./assets/css/Cuntry.css" />
+    <link rel="stylesheet" href="./assets/css/Reset.css" />
+    <title>Invest</title>
+</head>
+
+<body>
+    <header class="Header">
+        <h1 class="Header_Logo">Invest</h1>
+    </header>
+    <main class="Main">
+        <div class="Sidebar">
+            <nav class="Sidebar_box">
+                <ul class="Sidebar_box_Content">
+                    <li class="Sidebar_box_Content_text"><a href="#"
+                            onclick="window.loadLocalFile('index.html');">Dashbord</a></li>
+                    <li class="Sidebar_box_Content_text">Stocks</li>
+                    <li class="Sidebar_box_Content_text"><a href="#"
+                            onclick="window.loadLocalFile('foreignexchange.html');">Foreign Exchange</a></li>
+                    <li class="Sidebar_box_Content_text select"><a href="#"
+                            onclick="window.loadLocalFile('gold.html');">Gold Reserve</a></li>
+                </ul>
+            </nav>
+        </div>
+        <article class="Dashbord">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                        {
+                            "symbols": [
+                                {
+                                    "description": "GOLD",
+                                    "proName": "TVC:GOLD"
+                                },
+                                {
+                                    "description": "GOLD",
+                                    "proName": "OANDA:XAUUSD"
+                                },
+                                {
+                                    "description": "GOLD/CHF",
+                                    "proName": "OANDA:XAUCHF"
+                                },
+                                {
+                                    "description": "GOLD/EUR",
+                                    "proName": "OANDA:XAUEUR"
+                                },
+                                {
+                                    "description": "XAU/JPY",
+                                    "proName": "OANDA:XAUJPY"
+                                },
+                                {
+                                    "description": "\tXAU/GBP",
+                                    "proName": "OANDA:XAUGBP"
+                                }
+                            ],
+                                "showSymbolLogo": true,
+                                    "colorTheme": "light",
+                                        "isTransparent": true,
+                                            "displayMode": "adaptive",
+                                                "locale": "ja"
+                        }
+                    </script>
+            </div>
+            <h2 class="Dashbord_text">Foreign Exchange</h2>
+            <div class="Fxconteiner">
+                <div class="GoldBox">
+                    <div class="GoldBox_Country">
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                                async>
+                                    {
+                                        "symbol": "OANDA:XAUUSD",
+                                            "width": "350",
+                                                "height": "220",
+                                                    "locale": "ja",
+                                                        "dateRange": "60M",
+                                                            "colorTheme": "light",
+                                                                "trendLineColor": "rgba(255, 152, 0, 1)",
+                                                                    "underLineColor": "rgba(255, 255, 0, 1)",
+                                                                        "underLineBottomColor": "rgba(255, 242, 204, 0)",
+                                                                            "isTransparent": false,
+                                                                                "autosize": false,
+                                                                                    "largeChartUrl": ""
+                                    }
+                                </script>
+                        </div>
+                    </div>
+                    <div class="GoldBox_Country">
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                                async>
+                                    {
+                                        "symbol": "OANDA:XAUCHF",
+                                            "width": "350",
+                                                "height": "220",
+                                                    "locale": "ja",
+                                                        "dateRange": "60M",
+                                                            "colorTheme": "light",
+                                                                "trendLineColor": "rgba(255, 152, 0, 1)",
+                                                                    "underLineColor": "rgba(255, 255, 0, 1)",
+                                                                        "underLineBottomColor": "rgba(255, 242, 204, 0)",
+                                                                            "isTransparent": false,
+                                                                                "autosize": false,
+                                                                                    "largeChartUrl": ""
+                                    }
+                                </script>
+                        </div>
+                    </div>
+                    <div class="GoldBox_Country">
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                                async>
+                                    {
+                                        "symbol": "OANDA:XAUGBP",
+                                            "width": "350",
+                                                "height": "220",
+                                                    "locale": "ja",
+                                                        "dateRange": "60M",
+                                                            "colorTheme": "light",
+                                                                "trendLineColor": "rgba(255, 152, 0, 1)",
+                                                                    "underLineColor": "rgba(255, 255, 0, 1)",
+                                                                        "underLineBottomColor": "rgba(255, 242, 204, 0)",
+                                                                            "isTransparent": false,
+                                                                                "autosize": false,
+                                                                                    "largeChartUrl": ""
+                                    }
+                                </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <script src="./assets/js/preload.js"></script>
+</body>
+
+</html>

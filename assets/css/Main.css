@@ -210,3 +210,10 @@ select {
     transition: all 0.3s ease;
     box-shadow: 0px 2.5px 5px  #ff766c;
 }
+.GoldBox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
