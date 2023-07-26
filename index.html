@@ -22,12 +22,8 @@
           <ul class="Sidebar_box_Content">
             <li class="Sidebar_box_Content_text select">Dashbord</li>
             <li class="Sidebar_box_Content_text">Stocks</li>
-            <li class="Sidebar_box_Content_text">
-              <a href="#" onclick="window.loadLocalFile('foreignexchange.html');"
-                >Foreign Exchange</a
-              >
-            </li>
-            <li class="Sidebar_box_Content_text">Gold Reserve</li>
+            <li class="Sidebar_box_Content_text"><a href="#" onclick="window.loadLocalFile('foreignexchange.html');">Foreign Exchange</a></li>
+            <li class="Sidebar_box_Content_text"><a href="#" onclick="window.loadLocalFile('gold.html');">Gold Reserve</a></li>
           </ul>
         </nav>
       </div>
@@ -95,8 +91,8 @@
           </script>
         </div>
         <h2 class="Dashbord_text">Foreign Exchange Reserves</h2>
-        <div class="Fxconteiner">
-          <div class="Fxconteiner_box">
+        <div class="conteiner">
+          <div class="conteiner_box">
             <div class="Cuntrybox">
               <svg
                 class="Cuntryimage"
@@ -219,7 +215,6 @@
         </div>
 
         <h2 class="Dashbord_text">Gold Holdings</h2>
-        <!-- TradingView Widget BEGIN -->
         <div class="tradingview-widget-container">
           <div class="tradingview-widget-container__widget"></div>
           <script
@@ -262,7 +257,7 @@
             }
           </script>
         </div>
-        <!-- TradingView Widget END -->
+
         <div class="Line_Chart">
           <canvas id="goldPriceChart"></canvas>
         </div>
