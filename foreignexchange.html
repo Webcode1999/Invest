@@ -25,8 +25,8 @@
           </li>
           <li class="Sidebar_box_Content_text">Stocks</li>
           <li class="Sidebar_box_Content_text select">Foreign Exchange</li>
-          <li class="Sidebar_box_Content_text"><a href="#"
-            onclick="window.loadLocalFile('gold.html');">Gold Reserve</a></li>
+          <li class="Sidebar_box_Content_text"><a href="#" onclick="window.loadLocalFile('gold.html');">Gold Reserve</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -162,35 +162,833 @@
               <button type="button" id="sellBtn">Sell</button>
             </form>
           </div>
-          
+
         </div>
       </div>
-        <div class="tradingview-widget-container">
-          <div class="tradingview-widget-container__widget"></div>
-          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
-          {
-          "width": 790,
-          "height": 400,
-          "currencies": [
-            "EUR",
-            "USD",
-            "JPY",
-            "GBP",
-            "CHF",
-            "AUD",
-            "CAD",
-            "NZD",
-            "CNY",
-            "SGD",
-            "KRW",
-            "TWD"
-          ],
-          "isTransparent": false,
-          "colorTheme": "light",
-          "locale": "ja"
-        }
-          </script>
+      <div class="Headdingbox">
+        <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#F8F9FD" d="M0 0h18v18H0z" />
+          <path d="M11 4h7V0h-7v4zM0 18h18v-4H0v4zM11 11h7V7h-7v4z" fill="#EF5350" />
+          <path fill="#1E88E5" d="M0 0h11v11H0z" />
+          <path
+            d="M2.42 1.22a.09.09 0 0 1 .16 0l.27.71c.01.04.05.06.08.06l.76.04c.08 0 .11.1.05.16l-.6.47a.09.09 0 0 0-.02.1l.2.72a.09.09 0 0 1-.14.1l-.63-.41a.09.09 0 0 0-.1 0l-.63.41a.09.09 0 0 1-.14-.1l.2-.73a.09.09 0 0 0-.03-.1l-.59-.46a.09.09 0 0 1 .05-.16l.76-.04c.03 0 .07-.02.08-.06l.27-.7zM2.42 4.22a.09.09 0 0 1 .16 0l.27.71c.01.04.05.06.08.06l.76.04c.08 0 .11.1.05.16l-.6.47a.09.09 0 0 0-.02.1l.2.72a.09.09 0 0 1-.14.1l-.63-.41a.09.09 0 0 0-.1 0l-.63.41a.09.09 0 0 1-.14-.1l.2-.73a.09.09 0 0 0-.03-.1l-.59-.46a.09.09 0 0 1 .05-.16l.76-.04c.03 0 .07-.02.08-.06l.27-.7zM2.42 7.22a.09.09 0 0 1 .16 0l.27.71c.01.04.05.06.08.06l.76.04c.08 0 .11.1.05.16l-.6.47a.09.09 0 0 0-.02.1l.2.72a.09.09 0 0 1-.14.1l-.63-.41a.09.09 0 0 0-.1 0l-.63.41a.09.09 0 0 1-.14-.1l.2-.73a.09.09 0 0 0-.03-.1l-.59-.46a.09.09 0 0 1 .05-.16l.76-.04c.03 0 .07-.02.08-.06l.27-.7zM5.42 1.22a.09.09 0 0 1 .16 0l.27.71c.01.04.05.06.08.06l.76.04c.08 0 .11.1.05.16l-.6.47a.09.09 0 0 0-.02.1l.2.72a.09.09 0 0 1-.14.1l-.63-.41a.09.09 0 0 0-.1 0l-.63.41a.09.09 0 0 1-.14-.1l.2-.73a.09.09 0 0 0-.03-.1l-.59-.46a.09.09 0 0 1 .05-.16l.76-.04c.03 0 .07-.02.08-.06l.27-.7zM5.42 4.22a.09.09 0 0 1 .16 0l.27.71c.01.04.05.06.08.06l.76.04c.08 0 .11.1.05.16l-.6.47a.09.09 0 0 0-.02.1l.2.72a.09.09 0 0 1-.14.1l-.63-.41a.09.09 0 0 0-.1 0l-.63.41a.09.09 0 0 1-.14-.1l.2-.73a.09.09 0 0 0-.03-.1l-.59-.46a.09.09 0 0 1 .05-.16l.76-.04c.03 0 .07-.02.08-.06l.27-.7zM5.42 7.22a.09.09 0 0 1 .16 0l.27.71c.01.04.05.06.08.06l.76.04c.08 0 .11.1.05.16l-.6.47a.09.09 0 0 0-.02.1l.2.72a.09.09 0 0 1-.14.1l-.63-.41a.09.09 0 0 0-.1 0l-.63.41a.09.09 0 0 1-.14-.1l.2-.73a.09.09 0 0 0-.03-.1l-.59-.46a.09.09 0 0 1 .05-.16l.76-.04c.03 0 .07-.02.08-.06l.27-.7zM8.42 1.22a.09.09 0 0 1 .16 0l.27.71c.01.04.05.06.08.06l.76.04c.08 0 .11.1.05.16l-.6.47a.09.09 0 0 0-.02.1l.2.72a.09.09 0 0 1-.14.1l-.63-.41a.09.09 0 0 0-.1 0l-.63.41a.09.09 0 0 1-.14-.1l.2-.73a.09.09 0 0 0-.03-.1l-.59-.46a.09.09 0 0 1 .05-.16l.76-.04c.03 0 .07-.02.08-.06l.27-.7zM8.42 4.22a.09.09 0 0 1 .16 0l.27.71c.01.04.05.06.08.06l.76.04c.08 0 .11.1.05.16l-.6.47a.09.09 0 0 0-.02.1l.2.72a.09.09 0 0 1-.14.1l-.63-.41a.09.09 0 0 0-.1 0l-.63.41a.09.09 0 0 1-.14-.1l.2-.73a.09.09 0 0 0-.03-.1l-.59-.46a.09.09 0 0 1 .05-.16l.76-.04c.03 0 .07-.02.08-.06l.27-.7zM8.42 7.22a.09.09 0 0 1 .16 0l.27.71c.01.04.05.06.08.06l.76.04c.08 0 .11.1.05.16l-.6.47a.09.09 0 0 0-.02.1l.2.72a.09.09 0 0 1-.14.1l-.63-.41a.09.09 0 0 0-.1 0l-.63.41a.09.09 0 0 1-.14-.1l.2-.73a.09.09 0 0 0-.03-.1l-.59-.46a.09.09 0 0 1 .05-.16l.76-.04c.03 0 .07-.02.08-.06l.27-.7z"
+            fill="#F8F9FD" />
+        </svg>
+        <h2 class="Dashbord_text">USD</h2>
+      </div>
+      <div class="Fxconteiner">
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "USDJPY",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(0, 0, 255, 1)",
+                                "underLineColor": "rgba(164, 194, 244, 1)",
+                                  "underLineBottomColor": "rgba(207, 226, 243, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
         </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "FX_IDC:USDGBP",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(0, 0, 255, 1)",
+                                "underLineColor": "rgba(164, 194, 244, 1)",
+                                  "underLineBottomColor": "rgba(207, 226, 243, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                  {
+                    "symbol": "OANDA:USDCHF",
+                      "width": 350,
+                        "height": 220,
+                          "locale": "ja",
+                            "dateRange": "60M",
+                              "colorTheme": "light",
+                                "trendLineColor": "rgba(0, 0, 255, 1)",
+                                  "underLineColor": "rgba(164, 194, 244, 1)",
+                                    "underLineBottomColor": "rgba(207, 226, 243, 0)",
+                                      "isTransparent": true,
+                                        "autosize": false,
+                                          "largeChartUrl": ""
+                  }
+                </script>
+            </div>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "FX:USDCAD",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(0, 0, 255, 1)",
+                                "underLineColor": "rgba(164, 194, 244, 1)",
+                                  "underLineBottomColor": "rgba(207, 226, 243, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "SAXO:USDAUD",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(0, 0, 255, 1)",
+                                "underLineColor": "rgba(164, 194, 244, 1)",
+                                  "underLineBottomColor": "rgba(207, 226, 243, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "FX_IDC:USDNZD",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(0, 0, 255, 1)",
+                                "underLineColor": "rgba(164, 194, 244, 1)",
+                                  "underLineBottomColor": "rgba(207, 226, 243, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "FX_IDC:USDEUR",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(0, 0, 255, 1)",
+                                "underLineColor": "rgba(164, 194, 244, 1)",
+                                  "underLineBottomColor": "rgba(207, 226, 243, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "FX:USDCNH",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(0, 0, 255, 1)",
+                                "underLineColor": "rgba(164, 194, 244, 1)",
+                                  "underLineBottomColor": "rgba(207, 226, 243, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "VANTAGE:USDTWD",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(0, 0, 255, 1)",
+                                "underLineColor": "rgba(164, 194, 244, 1)",
+                                  "underLineBottomColor": "rgba(207, 226, 243, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "OANDA:USDSGD",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(0, 0, 255, 1)",
+                                "underLineColor": "rgba(164, 194, 244, 1)",
+                                  "underLineBottomColor": "rgba(207, 226, 243, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "FX_IDC:USDMAD",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(0, 0, 255, 1)",
+                                "underLineColor": "rgba(164, 194, 244, 1)",
+                                  "underLineBottomColor": "rgba(207, 226, 243, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "VANTAGE:USDKRW",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(0, 0, 255, 1)",
+                                "underLineColor": "rgba(164, 194, 244, 1)",
+                                  "underLineBottomColor": "rgba(207, 226, 243, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+      </div>
+      <div class="Headdingbox">
+        <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h18v18H0V0z" fill="#fff" />
+          <path
+            d="M7 0H1l6 5.5V0zm4 0v6l6.5-6H11zm7 4.5L15 7h3V4.5zm0 6.5h-4l4 3.5V11zm-1 7l-6-5.5V18h6zM7 18v-6L.5 18H7zm-7-4.5L3 11H0v2.5zM0 7h4L0 3.5V7z"
+            fill="#0D47A1" />
+          <path
+            d="M7 7L-6.5-5v2.3L5 7h2zm1 1V0h2v8h8v2h-8v8H8v-8H0V8h8zM-9 23L5 11h2L-6.5 23H-9zM11 7L23-4h2.2L13 7h-2zm2 4h-2l11.5 10v-2L13 11z"
+            fill="#EF5350" />
+        </svg>
+        <h2 class="Dashbord_text">GBP</h2>
+      </div>
+      <div class="Fxconteiner">
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "OANDA:GBPJPY",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(152, 0, 255, 1)",
+                                "underLineColor": "rgba(142, 124, 195, 1)",
+                                  "underLineBottomColor": "rgba(217, 210, 233, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "GBPUSD",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(152, 0, 255, 1)",
+                                "underLineColor": "rgba(142, 124, 195, 1)",
+                                  "underLineBottomColor": "rgba(217, 210, 233, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                  {
+                    "symbol": "GBPCHF",
+                      "width": 350,
+                        "height": 220,
+                          "locale": "ja",
+                            "dateRange": "60M",
+                              "colorTheme": "light",
+                                "trendLineColor": "rgba(152, 0, 255, 1)",
+                                  "underLineColor": "rgba(142, 124, 195, 1)",
+                                    "underLineBottomColor": "rgba(217, 210, 233, 0)",
+                                      "isTransparent": true,
+                                        "autosize": false,
+                                          "largeChartUrl": ""
+                  }
+                </script>
+            </div>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "OANDA:GBPCAD",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(152, 0, 255, 1)",
+                                "underLineColor": "rgba(142, 124, 195, 1)",
+                                  "underLineBottomColor": "rgba(217, 210, 233, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "GBPAUD",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(152, 0, 255, 1)",
+                                "underLineColor": "rgba(142, 124, 195, 1)",
+                                  "underLineBottomColor": "rgba(217, 210, 233, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "OANDA:GBPNZD",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(152, 0, 255, 1)",
+                                "underLineColor": "rgba(142, 124, 195, 1)",
+                                  "underLineBottomColor": "rgba(217, 210, 233, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "FX_IDC:GBPEUR",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(152, 0, 255, 1)",
+                                "underLineColor": "rgba(142, 124, 195, 1)",
+                                  "underLineBottomColor": "rgba(217, 210, 233, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "SAXO:GBPCNH",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(152, 0, 255, 1)",
+                                "underLineColor": "rgba(142, 124, 195, 1)",
+                                  "underLineBottomColor": "rgba(217, 210, 233, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "FX_IDC:GBPTWD",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(152, 0, 255, 1)",
+                                "underLineColor": "rgba(142, 124, 195, 1)",
+                                  "underLineBottomColor": "rgba(217, 210, 233, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "GBPSGD",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(152, 0, 255, 1)",
+                                "underLineColor": "rgba(142, 124, 195, 1)",
+                                  "underLineBottomColor": "rgba(217, 210, 233, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "FX_IDC:GBPMAD",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(152, 0, 255, 1)",
+                                "underLineColor": "rgba(142, 124, 195, 1)",
+                                  "underLineBottomColor": "rgba(217, 210, 233, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                  "symbol": "FX_IDC:GBPKRW",
+                    "width": 350,
+                      "height": 220,
+                        "locale": "ja",
+                          "dateRange": "60M",
+                            "colorTheme": "light",
+                              "trendLineColor": "rgba(152, 0, 255, 1)",
+                                "underLineColor": "rgba(142, 124, 195, 1)",
+                                  "underLineBottomColor": "rgba(217, 210, 233, 0)",
+                                    "isTransparent": true,
+                                      "autosize": false,
+                                        "largeChartUrl": ""
+                }
+              </script>
+          </div>
+        </div>
+      </div>
+      <div class="Headdingbox">
+        <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 18h10V0H4v18z" fill="#F8F9FD" />
+          <path
+            d="M14 18h4V0h-4v18zM0 18h4V0H0v18zM11 10l2-1-1-.5v-1l-2 1L11 7h-1L9 5 8 7H7l1 1.5-2-1v1L5 9l2 1-.5 1h2v1h1v-1h2l-.5-1z"
+            fill="#EF5350" />
+        </svg>
+        <h2 class="Dashbord_text">CAD</h2>
+      </div>
+      <div class="Fxconteiner">
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+              {
+              "symbol": "FX:CADJPY",
+              "width": 350,
+              "height": 220,
+              "locale": "ja",
+              "dateRange": "60M",
+              "colorTheme": "light",
+              "trendLineColor": "rgba(255, 0, 0, 1)",
+              "underLineColor": "rgba(204, 0, 0, 1)",
+              "underLineBottomColor": "rgba(244, 204, 204, 0)",
+              "isTransparent": true,
+              "autosize": false,
+              "largeChartUrl": ""
+            }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+              {
+              "symbol": "FX_IDC:CADGBP",
+              "width": 350,
+              "height": 220,
+              "locale": "ja",
+              "dateRange": "60M",
+              "colorTheme": "light",
+              "trendLineColor": "rgba(255, 0, 0, 1)",
+              "underLineColor": "rgba(204, 0, 0, 1)",
+              "underLineBottomColor": "rgba(244, 204, 204, 0)",
+              "isTransparent": true,
+              "autosize": false,
+              "largeChartUrl": ""
+            }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                "symbol": "FX:CADCHF",
+                "width": 350,
+                "height": 220,
+                "locale": "ja",
+                "dateRange": "60M",
+                "colorTheme": "light",
+                "trendLineColor": "rgba(255, 0, 0, 1)",
+                "underLineColor": "rgba(204, 0, 0, 1)",
+                "underLineBottomColor": "rgba(244, 204, 204, 0)",
+                "isTransparent": true,
+                "autosize": false,
+                "largeChartUrl": ""
+              }
+                </script>
+            </div>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+              {
+              "symbol": "SAXO:CADUSD",
+              "width": 350,
+              "height": 220,
+              "locale": "ja",
+              "dateRange": "60M",
+              "colorTheme": "light",
+              "trendLineColor": "rgba(255, 0, 0, 1)",
+              "underLineColor": "rgba(204, 0, 0, 1)",
+              "underLineBottomColor": "rgba(244, 204, 204, 0)",
+              "isTransparent": true,
+              "autosize": false,
+              "largeChartUrl": ""
+            }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+              {
+              "symbol": "FX_IDC:CADAUD",
+              "width": 350,
+              "height": 220,
+              "locale": "ja",
+              "dateRange": "60M",
+              "colorTheme": "light",
+              "trendLineColor": "rgba(255, 0, 0, 1)",
+              "underLineColor": "rgba(204, 0, 0, 1)",
+              "underLineBottomColor": "rgba(244, 204, 204, 0)",
+              "isTransparent": true,
+              "autosize": false,
+              "largeChartUrl": ""
+            }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+              {
+              "symbol": "FX_IDC:CADNZD",
+              "width": 350,
+              "height": 220,
+              "locale": "ja",
+              "dateRange": "60M",
+              "colorTheme": "light",
+              "trendLineColor": "rgba(255, 0, 0, 1)",
+              "underLineColor": "rgba(204, 0, 0, 1)",
+              "underLineBottomColor": "rgba(244, 204, 204, 0)",
+              "isTransparent": true,
+              "autosize": false,
+              "largeChartUrl": ""
+            }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+              {
+              "symbol": "SAXO:CADEUR",
+              "width": 350,
+              "height": 220,
+              "locale": "ja",
+              "dateRange": "60M",
+              "colorTheme": "light",
+              "trendLineColor": "rgba(255, 0, 0, 1)",
+              "underLineColor": "rgba(204, 0, 0, 1)",
+              "underLineBottomColor": "rgba(244, 204, 204, 0)",
+              "isTransparent": true,
+              "autosize": false,
+              "largeChartUrl": ""
+            }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+              {
+              "symbol": "SAXO:CADCNH",
+              "width": 350,
+              "height": 220,
+              "locale": "ja",
+              "dateRange": "60M",
+              "colorTheme": "light",
+              "trendLineColor": "rgba(255, 0, 0, 1)",
+              "underLineColor": "rgba(204, 0, 0, 1)",
+              "underLineBottomColor": "rgba(244, 204, 204, 0)",
+              "isTransparent": true,
+              "autosize": false,
+              "largeChartUrl": ""
+            }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+              {
+              "symbol": "FX_IDC:CADTWD",
+              "width": 350,
+              "height": 220,
+              "locale": "ja",
+              "dateRange": "60M",
+              "colorTheme": "light",
+              "trendLineColor": "rgba(255, 0, 0, 1)",
+              "underLineColor": "rgba(204, 0, 0, 1)",
+              "underLineBottomColor": "rgba(244, 204, 204, 0)",
+              "isTransparent": true,
+              "autosize": false,
+              "largeChartUrl": ""
+            }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+              {
+              "symbol": "OANDA:CADSGD",
+              "width": 350,
+              "height": 220,
+              "locale": "ja",
+              "dateRange": "60M",
+              "colorTheme": "light",
+              "trendLineColor": "rgba(255, 0, 0, 1)",
+              "underLineColor": "rgba(204, 0, 0, 1)",
+              "underLineBottomColor": "rgba(244, 204, 204, 0)",
+              "isTransparent": true,
+              "autosize": false,
+              "largeChartUrl": ""
+            }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+              {
+              "symbol": "FX_IDC:CADMAD",
+              "width": 350,
+              "height": 220,
+              "locale": "ja",
+              "dateRange": "60M",
+              "colorTheme": "light",
+              "trendLineColor": "rgba(255, 0, 0, 1)",
+              "underLineColor": "rgba(204, 0, 0, 1)",
+              "underLineBottomColor": "rgba(244, 204, 204, 0)",
+              "isTransparent": true,
+              "autosize": false,
+              "largeChartUrl": ""
+            }
+              </script>
+          </div>
+        </div>
+        <div class="Fxconteiner_box">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+              {
+              "symbol": "FX_IDC:CADKRW",
+              "width": 350,
+              "height": 220,
+              "locale": "ja",
+              "dateRange": "60M",
+              "colorTheme": "light",
+              "trendLineColor": "rgba(255, 0, 0, 1)",
+              "underLineColor": "rgba(204, 0, 0, 1)",
+              "underLineBottomColor": "rgba(244, 204, 204, 0)",
+              "isTransparent": true,
+              "autosize": false,
+              "largeChartUrl": ""
+            }
+              </script>
+          </div>
+        </div>
+      </div>
     </article>
   </main>
   <script src="./assets/js/preload.js"></script>
